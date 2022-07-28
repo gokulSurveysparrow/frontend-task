@@ -1,0 +1,115 @@
+.footer {
+    max-width: 1100px;
+    margin: 200px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include up-to("lg") {
+        flex-wrap: wrap;
+    }
+
+    @include up-to("xl") {
+        margin: 20px
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    p {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 28px;
+            text-align: left;
+            color: #0D1B1E80;
+        }
+    }
+
+    &-items {
+        margin: 20px;
+
+        @include up-to("xl") {
+            margin: 10px 5px;
+        }
+    }
+
+    &-connect {
+        padding-top: 30px;
+        padding-bottom: 25px;
+
+        &-item {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: #0D1B1E80;
+                font-weight: 300;
+                padding: 5px;
+
+            }
+        }
+    }
+
+    &-images {
+        max-width: 366px;
+
+        :nth-child(1) {
+            padding: 12px 12px 12px 0px;
+        }
+
+        :nth-child(2) {
+            padding: 12px;
+        }
+
+        :nth-child(3) {
+            padding: 12px;
+        }
+
+        :nth-child(4) {
+            padding: 12px;
+        }
+
+        :nth-child(5) {
+            padding: 12px 0px 12px 12px;
+        }
+
+        @include up-to("sm") {
+            :nth-child(1) {
+                padding: 12px;
+            }
+
+            :nth-child(2) {
+                padding: 12px;
+            }
+
+            :nth-child(3) {
+                padding: 12px;
+            }
+
+            :nth-child(4) {
+                padding: 12px;
+            }
+
+            :nth-child(5) {
+                padding: 12px;
+            }
+        }
+    }
+
+    &-iso {
+        padding-top: 75px;
+    }
+}

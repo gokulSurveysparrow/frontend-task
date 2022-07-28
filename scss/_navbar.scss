@@ -1,0 +1,30 @@
+.navbar {
+    justify-content: flex-start;
+
+    img {
+        @include up-to("sm") {
+            width: 175px;
+        }
+    }
+}
+
+.nav-items {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-item {
+    @include up-to("xl") {
+        display: none;
+    }
+}
+
+
+.btn-primary {
+    background: #30BF91;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}

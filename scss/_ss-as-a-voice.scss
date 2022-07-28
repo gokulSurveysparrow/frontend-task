@@ -1,0 +1,242 @@
+.ss {
+    &-wrapper {
+        margin-top: -250px;
+        padding-bottom: 270px;
+        background-color: $color-bg-dark-900;
+        color: white;
+
+        @include up-to("xl") {
+            padding: 50px 20px 200px;
+        }
+
+        &-text {
+            color: white;
+            margin-bottom: 32px;
+            padding-top: 104px;
+
+
+        }
+
+        .grid {
+            grid-template-columns: repeat((2, 1fr));
+            column-gap: 94px;
+
+            @include up-to("xl") {
+                grid-template-columns: repeat((1, 1fr));
+            }
+        }
+    }
+
+    &-items {
+        align-items: start;
+        padding: 104px 20px 0px;
+
+        img {
+            background-color: $color-bg-green;
+            padding: 12px;
+            border-radius: 100px;
+        }
+
+        @include up-to("xl") {
+            padding: 100px 0px 0px;
+        }
+
+        &-text {
+            padding-left: 24px;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 56px;
+                text-align: left;
+                padding-bottom: 32px;
+
+                @include up-to("xl") {
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                @include up-to("xl") {
+                    margin-left: -75px;
+                }
+            }
+        }
+    }
+}
+
+
+.medals {
+    margin: 0px auto;
+    padding-bottom: 170px;
+    max-width: 920px;
+
+    @include up-to("xl") {
+        padding-bottom: 50px;
+    }
+
+    &-text {
+        text-align: center;
+        padding-bottom: 180px;
+
+        @include up-to("xl") {
+            padding-bottom: 50px;
+        }
+
+        h2 {
+            padding-bottom: 32px;
+        }
+    }
+
+    @include up-to("lg") {
+        flex-direction: column;
+
+        img {
+            padding: 20px 5px;
+        }
+    }
+}
+
+
+.competitors {
+    @include up-to("lg") {
+        margin: 10px 30px;
+    }
+
+    &-text {
+        text-align: center;
+
+        @include up-to("lg") {
+            text-align: left;
+        }
+    }
+
+    &-grid {
+        justify-content: center;
+        margin: 0px 200px;
+
+        @include up-to("xl") {
+            margin: 0px 100px;
+
+        }
+    }
+
+    .grid {
+        padding-top: 104px;
+        padding-bottom: 160px;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 130px;
+        column-gap: 120px;
+
+        @include up-to("lg") {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 100px;
+            column-gap: 20px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        img {
+            align-self: flex-end;
+            width: 120px;
+
+            @include up-to("xl") {
+                width: 90px;
+                padding: 0px;
+            }
+        }
+
+
+    }
+}
+
+.customers {
+    margin: 0px 245px;
+
+
+    @include up-to("lg") {
+        margin: 0px 30px;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 38px;
+        text-align: center;
+
+        @include up-to("lg") {
+            text-align: left;
+        }
+    }
+
+    &-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 30px;
+
+        // media querry
+
+        @include up-to("xl") {
+            margin: 10px;
+        }
+
+        h3 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 56px;
+            text-align: center;
+
+            @include up-to("xl") {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 16px;
+            text-align: center;
+            color: #00000099;
+        }
+    }
+
+    &-images {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 100px 350px;
+
+
+        @include up-to("xl") {
+            padding: 50px 20px;
+
+            :first-child {
+                display: none;
+            }
+
+            :last-child {
+                display: none;
+            }
+        }
+
+        div {
+            :first-child {
+                display: flex;
+            }
+
+            :last-child {
+                display: flex;
+            }
+        }
+
+        img {
+            border-radius: 100px;
+
+            @include up-to("xl") {
+                width: 50px;
+            }
+        }
+    }
+}

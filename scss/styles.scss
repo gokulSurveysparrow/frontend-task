@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$color-bg-green: #19B885;
+$color-bg-light-100: #F5FDFF;
+$color-bg-dark-900: #33393F;
+$color-bg-dark-600: #364250;
+$btn-color-black: #0D1B1E;
+$btn-primary-color: #30BF91;
+$white: white;
+$black: black;
+
+$breakpoints: (
+    'sm':425px,
+    'md': 767px,
+    'lg': 992px,
+    'xl': 1300px,
+    '2xl':1440px,
+);
+
+@mixin up-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    @include up-to("2xl") {
+        br {
+            display: none;
+        }
+    }
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #0D1B1E;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #0D1B1E;
+
+    @include up-to("xl") {
+        font-size: 26px;
+    }
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+}
+
+
+@import "utils";
+@import "navbar";
+@import "banner";
+@import "buildSection";
+@import "clips";
+@import "priciplePurpose";
+@import "ss-as-a-voice";
+@import "believe";
+@import "footer";

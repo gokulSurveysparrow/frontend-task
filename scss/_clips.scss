@@ -1,0 +1,172 @@
+.clip-master-wrapper {
+    background-color: white;
+    padding-top: 13px;
+    border-radius: 5px;
+}
+
+.clips-wrapper {
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 68px;
+
+    &-text {
+        padding: 19px 150px 70px 130px;
+        text-align: center;
+
+        @include up-to("lg") {
+            padding: 20px;
+            text-align: left;
+        }
+    }
+
+    @include up-to("xl") {
+        padding-left: 50px;
+        flex-wrap: wrap;
+    }
+
+    @include up-to("lg") {
+        padding-left: 30px;
+    }
+}
+
+.clips-container {
+    padding: 5px;
+
+    @include up-to("xl") {
+        padding-top: 20px;
+    }
+}
+
+.clip-number {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 9px;
+    margin-bottom: 10px;
+
+    @include up-to("xl") {
+        margin-left: -10px;
+    }
+
+    &-2 {
+        @extend .clip-number;
+        margin-left: -75px;
+
+        @include up-to("xl") {
+            margin-left: -10px;
+        }
+    }
+}
+
+.clip1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    min-width: 300px;
+    padding: 17px 50px 17px 38px;
+    background-color: $color-bg-green;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+
+    @include up-to("xl") {
+        min-width: 250px;
+        margin-left: -10px;
+        padding: 17px 20px 17px 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+    }
+
+    @include up-to("lg") {
+        padding: 17px 70px 17px 50px;
+    }
+
+}
+
+.clip2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    margin-left: -75px;
+    min-width: 300px;
+    padding: 20px 38px 20px 50px;
+    align-items: center;
+    background-color: $color-bg-green;
+    color: white;
+    clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+
+    @include up-to("xl") {
+        min-width: 250px;
+        margin-left: -10px;
+        padding: 17px 20px 17px 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        clip-path: polygon(0% 0%, 75% 0%, 85% 50%, 75% 100%, 0% 100%);
+    }
+
+    @include up-to("lg") {
+        padding: 17px 70px 17px 50px;
+    }
+}
+
+
+.clip-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 63px;
+    column-gap: 22px;
+
+    @include up-to("lg") {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+
+    &-images {
+        max-width: 45px;
+        max-height: 45px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 9px;
+        margin-bottom: 12px;
+    }
+
+    &-container {
+
+        @include up-to("lg") {
+            flex-direction: column;
+
+            &-illustrations {
+                margin-top: 40px;
+                width: 300px;
+            }
+        }
+
+
+    }
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}

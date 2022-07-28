@@ -1,0 +1,93 @@
+.banner {
+    padding-bottom: 144px;
+    padding-top: 121px;
+    align-items: flex-start;
+
+    @include up-to("xl") {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    @include up-to("lg") {
+        padding-bottom: 60px;
+        padding-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 500px;
+            padding: 10px
+        }
+    }
+
+    @include up-to("md") {
+        img {
+            width: 300px;
+            padding: 5px
+        }
+    }
+}
+
+.banner-text {
+    padding: 32px 0px;
+
+    @include up-to("xl") {
+        br {
+            display: none;
+        }
+    }
+}
+
+.need-demo {
+    @include up-to("md") {
+        padding: 14px;
+    }
+}
+
+
+
+.banner-form {
+    justify-content: start;
+    gap: 3px;
+
+    input[type="text"] {
+        width: 50%;
+        background: #FFFFFF;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+        padding: 14px 47px 17px 18px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    @include up-to("xl") {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include up-to("lg") {
+        justify-content: center;
+    }
+
+}
+
+.banner-button {
+    padding: 8px 22px 12px;
+
+    @include up-to("xl") {
+        padding: 10px 7px 10px 7px;
+    }
+}
+
+.banner-paragraph {
+    h2 {
+        padding-bottom: 32px;
+    }
+
+}
