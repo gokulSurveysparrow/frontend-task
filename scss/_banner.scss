@@ -43,6 +43,10 @@
 }
 
 .need-demo {
+    p {
+        font-weight: 300;
+    }
+
     @include up-to("md") {
         padding: 14px;
     }
@@ -62,7 +66,7 @@
         padding: 14px 47px 17px 18px;
         font-size: 16px;
         font-weight: 300;
-        line-height: 19px;
+        line-height: 1.2;
     }
 
     @include up-to("xl") {
@@ -86,8 +90,26 @@
 }
 
 .banner-paragraph {
-    h2 {
-        padding-bottom: 32px;
+    margin-top: -65px;
+
+    a {
+        text-decoration: none;
+        position: relative;
     }
 
+    a:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -4px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: black;
+    }
+
+    p {
+        margin-top: 32px;
+    }
 }

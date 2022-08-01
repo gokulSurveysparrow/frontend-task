@@ -18,16 +18,16 @@
 
 .xsm-text {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.2;
 }
 
 .sm-text {
-    line-height: 14px;
+    line-height: 1;
     font-size: 14px;
 }
 
 .md-text {
-    line-height: 32px;
+    line-height: 1.8;
     font-size: 18px;
 }
 
@@ -93,8 +93,8 @@
     margin-top: 32px;
 }
 
-.mb-28 {
-    margin-bottom: 28px;
+.mb-23 {
+    margin-bottom: 23px;
 }
 
 .pt-88 {
@@ -107,6 +107,10 @@
 
 .pb-64 {
     padding-bottom: 64px;
+}
+
+.pb-32 {
+    padding-bottom: 32px
 }
 
 .px-237 {

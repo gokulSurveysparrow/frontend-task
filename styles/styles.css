@@ -16,7 +16,7 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-size: 56px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 1.25;
   color: #0D1B1E;
 }
 
@@ -24,7 +24,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 56px;
+  line-height: 1.5;
   color: #0D1B1E;
 }
 @media (max-width: 1300px) {
@@ -37,7 +37,7 @@ h3 {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 1.45;
 }
 
 a {
@@ -67,16 +67,16 @@ a {
 
 .xsm-text {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
 }
 
 .sm-text {
-  line-height: 14px;
+  line-height: 1;
   font-size: 14px;
 }
 
 .md-text {
-  line-height: 32px;
+  line-height: 1.8;
   font-size: 18px;
 }
 
@@ -141,8 +141,8 @@ a {
   margin-top: 32px;
 }
 
-.mb-28 {
-  margin-bottom: 28px;
+.mb-23 {
+  margin-bottom: 23px;
 }
 
 .pt-88 {
@@ -155,6 +155,10 @@ a {
 
 .pb-64 {
   padding-bottom: 64px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
 }
 
 .px-237 {
@@ -277,6 +281,9 @@ a {
   }
 }
 
+.need-demo p {
+  font-weight: 300;
+}
 @media (max-width: 767px) {
   .need-demo {
     padding: 14px;
@@ -295,7 +302,7 @@ a {
   padding: 14px 47px 17px 18px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 1.2;
 }
 @media (max-width: 1300px) {
   .banner-form {
@@ -319,8 +326,26 @@ a {
   }
 }
 
-.banner-paragraph h2 {
-  padding-bottom: 32px;
+.banner-paragraph {
+  margin-top: -65px;
+}
+.banner-paragraph a {
+  text-decoration: none;
+  position: relative;
+}
+.banner-paragraph a:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: black;
+}
+.banner-paragraph p {
+  margin-top: 32px;
 }
 
 .build-section {
@@ -335,7 +360,7 @@ a {
   position: relative;
   top: -150px;
   background-color: #33393F;
-  padding: 60px 0px 55px;
+  padding: 40px 80px 35px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
@@ -343,7 +368,7 @@ a {
 }
 .build-section-container-items {
   color: white;
-  width: 253px;
+  width: 280px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -353,11 +378,11 @@ a {
 }
 .build-section-container-items h5 {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.25;
 }
 .build-section-container-items p {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2;
   margin: 25px 10px 20px;
   min-height: 80px;
 }
@@ -386,7 +411,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 2;
   text-align: center;
   color: white;
   padding-bottom: 32px;
@@ -405,7 +430,7 @@ a {
   padding: 14px 100px 17px 18px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 1.2;
 }
 @media (max-width: 767px) {
   .build-section-container-green input[type=text] {
@@ -437,6 +462,7 @@ a {
 }
 @media (max-width: 767px) {
   .build-section-container {
+    padding: 40px 0px 35px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -635,7 +661,8 @@ a {
   flex: 1;
 }
 .principle-purpose-wrapper {
-  margin: 0px 360px 0px 360px;
+  max-width: 720px;
+  margin: 0px auto;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -649,7 +676,7 @@ a {
   color: #DEE4E5;
 }
 .principle-purpose-text {
-  line-height: 30px;
+  line-height: 1.8;
   font-size: 16px;
   padding-bottom: 32px;
 }
@@ -694,7 +721,7 @@ a {
 .perks h2 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 1.3;
   text-align: left;
 }
 @media (max-width: 1300px) {
@@ -705,7 +732,7 @@ a {
 .perks p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.875;
   text-align: left;
 }
 @media (max-width: 1300px) {
@@ -756,6 +783,11 @@ a {
   border-radius: 100px;
 }
 @media (max-width: 1300px) {
+  .ss-items img {
+    padding: 5px;
+  }
+}
+@media (max-width: 1300px) {
   .ss-items {
     padding: 100px 0px 0px;
   }
@@ -766,13 +798,13 @@ a {
 .ss-items-text h3 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 2.3;
   text-align: left;
   padding-bottom: 32px;
 }
 @media (max-width: 1300px) {
   .ss-items-text h3 {
-    line-height: 30px;
+    line-height: 2;
   }
 }
 @media (max-width: 1300px) {
@@ -793,7 +825,7 @@ a {
 }
 .medals-text {
   text-align: center;
-  padding-bottom: 180px;
+  padding-bottom: 120px;
 }
 @media (max-width: 1300px) {
   .medals-text {
@@ -820,11 +852,6 @@ a {
 .competitors-text {
   text-align: center;
 }
-@media (max-width: 992px) {
-  .competitors-text {
-    text-align: left;
-  }
-}
 .competitors-grid {
   justify-content: center;
   margin: 0px 200px;
@@ -843,8 +870,8 @@ a {
 }
 @media (max-width: 992px) {
   .competitors .grid {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
     column-gap: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -852,12 +879,12 @@ a {
 }
 .competitors .grid img {
   align-self: flex-end;
-  width: 120px;
 }
 @media (max-width: 1300px) {
   .competitors .grid img {
-    width: 90px;
     padding: 0px;
+    justify-self: center;
+    align-self: center;
   }
 }
 
@@ -869,16 +896,12 @@ a {
     margin: 0px 30px;
   }
 }
-.customers p {
+.customers-text {
   font-size: 22px;
   font-weight: 300;
-  line-height: 38px;
+  line-height: 1.7;
   text-align: center;
-}
-@media (max-width: 992px) {
-  .customers p {
-    text-align: left;
-  }
+  color: rgba(0, 0, 0, 0.6);
 }
 .customers-image {
   display: flex;
@@ -895,7 +918,7 @@ a {
 .customers-image h3 {
   font-size: 26px;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 2.1;
   text-align: center;
 }
 @media (max-width: 1300px) {
@@ -906,7 +929,7 @@ a {
 .customers-image p {
   font-size: 12px;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 1.3;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -956,15 +979,16 @@ a {
 }
 .believe-contents-heading {
   position: relative;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
   z-index: 2;
   padding-top: 77px;
   padding-bottom: 32px;
 }
-.believe-contents-heading h2 {
+.believe-contents-heading-h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
   color: white;
+  text-align: center;
 }
 .believe-contents-text {
   padding-top: 18px;
@@ -991,7 +1015,7 @@ a {
   padding: 14px 47px 17px 18px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 1.2;
 }
 @media (max-width: 1300px) {
   .believe-contents form input[type=text] {
@@ -1006,7 +1030,7 @@ a {
   border-bottom-left-radius: 0px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.2;
   text-align: center;
 }
 @media (max-width: 1300px) {
@@ -1036,20 +1060,18 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media (max-width: 992px) {
-  .footer {
-    flex-wrap: wrap;
-  }
-}
 @media (max-width: 1300px) {
   .footer {
-    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
   }
 }
 .footer h2 {
   font-size: 18px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.2;
   text-align: left;
 }
 .footer p {
@@ -1063,7 +1085,7 @@ a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 2;
   text-align: left;
   color: rgba(13, 27, 30, 0.5019607843);
 }
@@ -1074,10 +1096,28 @@ a {
   .footer-items {
     margin: 10px 5px;
   }
+  .footer-items h2 {
+    text-align: center;
+  }
+  .footer-items p {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-items p a {
+    text-align: center;
+  }
 }
 .footer-connect {
   padding-top: 30px;
   padding-bottom: 25px;
+}
+@media (max-width: 1300px) {
+  .footer-connect {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer-connect-item {
   display: flex;
@@ -1126,7 +1166,7 @@ a {
   }
 }
 .footer-iso {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

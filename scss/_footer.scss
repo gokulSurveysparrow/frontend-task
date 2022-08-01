@@ -4,18 +4,18 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    @include up-to("lg") {
-        flex-wrap: wrap;
-    }
 
     @include up-to("xl") {
-        margin: 20px
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 200px auto;
     }
 
     h2 {
         font-size: 18px;
         font-weight: 500;
-        line-height: 22px;
+        line-height: 1.2;
         text-align: left;
     }
 
@@ -30,7 +30,7 @@
             text-decoration: none;
             font-size: 14px;
             font-weight: 300;
-            line-height: 28px;
+            line-height: 2;
             text-align: left;
             color: #0D1B1E80;
         }
@@ -41,12 +41,32 @@
 
         @include up-to("xl") {
             margin: 10px 5px;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-align: center;
+                }
+            }
         }
     }
 
     &-connect {
         padding-top: 30px;
         padding-bottom: 25px;
+
+        @include up-to("xl") {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
 
         &-item {
             display: flex;
@@ -110,6 +130,6 @@
     }
 
     &-iso {
-        padding-top: 75px;
+        padding-top: 50px;
     }
 }
