@@ -347,6 +347,11 @@ a {
 .banner-paragraph p {
   margin-top: 32px;
 }
+@media (max-width: 1300px) {
+  .banner-paragraph {
+    margin-top: -15px;
+  }
+}
 
 .build-section {
   background-color: #F5FDFF;
