@@ -112,4 +112,9 @@
     p {
         margin-top: 32px;
     }
+
+    @include up-to("xl") {
+        margin-top: -15px;
+
+    }
 }
