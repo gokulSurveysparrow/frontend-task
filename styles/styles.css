@@ -796,8 +796,18 @@ a {
 .perks .flex:nth-child(odd) {
   padding-left: 20px;
 }
+@media (max-width: 1200px) {
+  .perks .flex:nth-child(odd) {
+    padding-left: 5px;
+  }
+}
 .perks .flex:nth-child(even) {
   padding-right: 20px;
+}
+@media (max-width: 1200px) {
+  .perks .flex:nth-child(even) {
+    padding-left: 5px;
+  }
 }
 @media (max-width: 1200px) {
   .perks .flex:nth-child(odd) {
@@ -813,14 +823,7 @@ a {
 }
 @media (max-width: 1200px) and (max-width: 992px) {
   .perks .flex img {
-    width: 500px;
-  }
-}
-@media (max-width: 1200px) and (max-width: 425px) {
-  .perks .flex img {
-    width: 250px;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    width: 100%;
   }
 }
 .perks h2 {
@@ -831,7 +834,7 @@ a {
 }
 @media (max-width: 1200px) {
   .perks h2 {
-    text-align: center;
+    text-align: left;
   }
 }
 .perks p {
@@ -842,14 +845,14 @@ a {
 }
 @media (max-width: 1200px) {
   .perks p {
-    text-align: center;
-    padding: 10px 10px;
+    text-align: left;
+    padding: 10px 0px;
   }
 }
 
 @media (max-width: 1200px) {
   .contain {
-    padding: 50px 10px;
+    padding: 50px 0px;
   }
 }
 
@@ -910,6 +913,7 @@ a {
 @media (max-width: 1200px) {
   .ss-items-text h3 {
     line-height: 2;
+    margin-top: -10px;
   }
 }
 @media (max-width: 1200px) {
@@ -1007,6 +1011,8 @@ a {
   line-height: 1.7;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
+  max-width: 950px;
+  margin: 5px auto;
 }
 .customers-image {
   display: flex;
