@@ -1,6 +1,6 @@
 .banner {
-    padding-bottom: 144px;
-    padding-top: 121px;
+    padding-bottom: 126px;
+    padding-top: 90px;
     align-items: flex-start;
 
     @include up-to("xl") {
@@ -17,25 +17,27 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
-        img {
-            width: 500px;
-            padding: 10px
-        }
     }
 
     @include up-to("md") {
+        h1 {
+            font-size: 42px;
+        }
+
         img {
-            width: 300px;
-            padding: 5px
+            margin-top: 50px;
+            width: 100%;
         }
     }
 }
 
 .banner-text {
-    padding: 32px 0px;
+    margin-top: 16px;
+    margin-bottom: 20px;
 
     @include up-to("xl") {
+        font-size: 16px;
+
         br {
             display: none;
         }
@@ -45,6 +47,11 @@
 .need-demo {
     p {
         font-weight: 300;
+        color: $btn-color-black;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     @include up-to("md") {
@@ -58,15 +65,25 @@
     justify-content: start;
     gap: 3px;
 
+
     input[type="text"] {
         width: 50%;
         background: #FFFFFF;
         border: 1px solid #D8D8D8;
         border-radius: 5px;
+        max-width: 270px;
         padding: 14px 47px 17px 18px;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.2;
+
+        @include up-to("md") {
+            min-width: 75%;
+        }
+    }
+
+    input[type="text"]::placeholder {
+        color: #BCBCBC;
     }
 
     @include up-to("xl") {
@@ -75,8 +92,9 @@
         text-align: center;
     }
 
-    @include up-to("lg") {
+    @include up-to("md") {
         justify-content: center;
+        flex-direction: column;
     }
 
 }
@@ -84,13 +102,21 @@
 .banner-button {
     padding: 8px 22px 12px;
 
-    @include up-to("xl") {
-        padding: 10px 7px 10px 7px;
+    @include up-to("md") {
+        // padding: 10px 7px 10px 7px;
+        min-width: 75%;
     }
 }
 
 .banner-paragraph {
-    margin-top: -65px;
+
+    p {
+        max-width: 1110px;
+        padding-bottom: 18px;
+        padding-top: 16px;
+        margin: 0px auto;
+        color: $btn-color-black;
+    }
 
     a {
         text-decoration: none;
@@ -101,7 +127,7 @@
         position: absolute;
         content: '';
         height: 2px;
-        bottom: -4px;
+        bottom: -2px;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -109,12 +135,8 @@
         background: black;
     }
 
-    p {
-        margin-top: 32px;
-    }
 
     @include up-to("xl") {
         margin-top: -15px;
-
     }
 }

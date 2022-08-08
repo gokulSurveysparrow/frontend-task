@@ -10,9 +10,11 @@
         max-width: 720px;
         margin: 0px auto;
         text-align: center;
+        padding-top: 37px;
+        padding-bottom: 54px;
 
-        @include up-to("lg") {
-            margin: 0px 40px;
+        @include up-to("md") {
+            margin: 0px 15px;
             text-align: left;
         }
 
@@ -25,12 +27,19 @@
     &-text {
         line-height: 1.8;
         font-size: 16px;
-        padding-bottom: 32px;
+        padding-bottom: 50px;
+        max-width: 652px;
+        margin: 0 auto;
     }
 
-    h3 {
-        padding-top: 24px;
-        padding-bottom: 24px;
+    &-h3-1 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    &-h3-2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 
