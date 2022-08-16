@@ -93,6 +93,8 @@
 
         @include up-to("xl") {
             text-align: left;
+            font-size: 22px;
+
         }
     }
 
@@ -112,6 +114,6 @@
 
 .contain {
     @include up-to("xl") {
-        padding: 50px 0px;
+        padding: 40px 0px;
     }
 }

@@ -2,17 +2,32 @@
     margin: 19px auto;
     max-width: 1300px;
 
+    @include up-to("2xl") {
+        margin: 20px
+    }
+
     @include up-to("xl") {
         margin: 15px
     }
+}
+
+.content-center {
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .container-md {
     margin: 0px auto;
     max-width: 1200px;
 
-    @include up-to("xl") {
+    @include up-to("2xl") {
         margin: 15px
+    }
+}
+
+.margin {
+    @include up-to("sm") {
+        margin: 0px 15px;
     }
 }
 
@@ -143,6 +158,11 @@
 
 .max-w-970 {
     max-width: 970px;
+    margin: 15px auto;
+
+    @include up-to("md") {
+        margin: 0px 15px;
+    }
 }
 
 .mt-100 {
