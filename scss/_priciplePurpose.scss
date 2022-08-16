@@ -110,6 +110,9 @@
         }
     }
 
+    @include up-to("md") {
+        padding-bottom: 250px !important;
+    }
 }
 
 .contain {

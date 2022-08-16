@@ -305,9 +305,13 @@ a {
     text-align: center;
   }
 }
+.banner h1 {
+  margin-right: 10px;
+}
 @media (max-width: 767px) {
   .banner h1 {
     font-size: 42px;
+    margin-right: 0px;
   }
   .banner img {
     margin-top: 50px;
@@ -318,6 +322,7 @@ a {
 .banner-text {
   margin-top: 16px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 @media (max-width: 1200px) {
   .banner-text {
@@ -918,6 +923,11 @@ a {
     padding: 10px 0px;
   }
 }
+@media (max-width: 767px) {
+  .perks {
+    padding-bottom: 250px !important;
+  }
+}
 
 @media (max-width: 1200px) {
   .contain {
@@ -940,6 +950,11 @@ a {
   color: white;
   margin-bottom: 25px;
   padding-top: 104px;
+}
+@media (max-width: 1200px) {
+  .ss-wrapper-text {
+    padding-top: 15px;
+  }
 }
 .ss-wrapper .grid {
   grid-template-columns: repeat(2, 1fr);
