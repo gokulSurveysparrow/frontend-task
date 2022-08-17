@@ -367,21 +367,21 @@ a {
   border: 1px solid #D8D8D8;
   border-radius: 5px;
   max-width: 270px;
-  padding: 14px 47px 17px 14px;
+  padding: 14px 47px 14px 14px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
 }
 @media (max-width: 767px) {
   .banner-form input[type=text] {
-    padding: 14px 10px 17px;
+    padding: 14px 10px 14px;
     min-width: 75%;
     text-align: center;
   }
 }
 @media (max-width: 425px) {
   .banner-form input[type=text] {
-    padding: 14px 10px 17px;
+    padding: 14px 10px 14px;
     min-width: 100%;
     text-align: center;
   }
@@ -408,7 +408,7 @@ a {
 }
 
 .banner-button {
-  padding: 10px 22px;
+  padding: 8px 22px;
 }
 @media (max-width: 767px) {
   .banner-button {

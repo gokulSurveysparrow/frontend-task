@@ -84,19 +84,19 @@
         border: 1px solid #D8D8D8;
         border-radius: 5px;
         max-width: 270px;
-        padding: 14px 47px 17px 14px;
+        padding: 14px 47px 14px 14px;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.2;
 
         @include up-to("md") {
-            padding: 14px 10px 17px;
+            padding: 14px 10px 14px;
             min-width: 75%;
             text-align: center;
         }
 
         @include up-to("sm") {
-            padding: 14px 10px 17px;
+            padding: 14px 10px 14px;
             min-width: 100%;
             text-align: center;
         }
@@ -125,7 +125,7 @@
 }
 
 .banner-button {
-    padding: 10px 22px;
+    padding: 8px 22px;
 
     @include up-to("md") {
         // padding: 10px 7px 10px 7px;
