@@ -57,10 +57,12 @@
 
             @include up-to("xl") {
                 padding: 65px 20px;
+                margin: 0px !important;
             }
 
             &-form {
                 justify-content: center;
+                align-items: end !important;
 
                 @include up-to("xl") {
                     min-width: 75%;
@@ -97,7 +99,7 @@
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
                 min-width: 310px;
-                padding: 14px 17px 18px;
+                padding: 14px 17px 14px;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 1.2;
@@ -117,7 +119,8 @@
                 border-bottom-left-radius: 0px;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
-                padding: 10px 27px 10px 34px;
+                border-top: 1px solid $btn-color-black;
+                padding: 8px 27px 8px 34px;
 
                 @include up-to("md") {
                     padding: 9px 10px 8px;
@@ -139,8 +142,10 @@
     }
 
     @include up-to("md") {
+        margin-top: 230px;
+
         &-container {
-            padding: 40px 0px 35px;
+            padding: 30px 0px 60px;
             grid-template-columns: repeat(1, 1fr);
         }
     }

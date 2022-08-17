@@ -175,6 +175,10 @@
 
 .max-w-630 {
     max-width: 630px;
+
+    @include up-to("xl") {
+        max-width: 100%;
+    }
 }
 
 .mt--250 {

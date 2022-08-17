@@ -16,6 +16,8 @@
         @include up-to("md") {
             margin: 0px 15px;
             text-align: left;
+            padding-bottom: 0px;
+
         }
 
         hr {
@@ -35,11 +37,19 @@
     &-h3-1 {
         margin-top: 24px;
         margin-bottom: 16px;
+
+        @include up-to("xl") {
+            font-size: 20px !important;
+        }
     }
 
     &-h3-2 {
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @include up-to("xl") {
+            font-size: 20px !important;
+        }
     }
 
 
