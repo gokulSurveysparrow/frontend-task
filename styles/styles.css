@@ -95,6 +95,11 @@ a {
   line-height: 1.8;
   font-size: 18px;
 }
+@media (max-width: 1200px) {
+  .md-text {
+    font-size: 14px;
+  }
+}
 
 .text-center {
   text-align: center;
@@ -932,6 +937,11 @@ a {
   max-width: 652px;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .principle-purpose-text {
+    font-size: 14px;
+  }
+}
 .principle-purpose-h3-1 {
   margin-top: 24px;
   margin-bottom: 16px;
@@ -1011,6 +1021,7 @@ a {
   .perks p {
     text-align: left;
     padding: 10px 0px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -1162,7 +1173,7 @@ a {
     row-gap: 50px;
     column-gap: 70px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 85px;
   }
 }
 .competitors .grid img {
@@ -1193,6 +1204,11 @@ a {
   color: rgba(0, 0, 0, 0.6);
   max-width: 950px;
   margin: 5px auto;
+}
+@media (max-width: 1200px) {
+  .customers-text {
+    font-size: 16px;
+  }
 }
 .customers-image {
   display: flex;

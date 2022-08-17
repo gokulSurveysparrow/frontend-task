@@ -44,6 +44,10 @@
 .md-text {
     line-height: 1.8;
     font-size: 18px;
+
+    @include up-to("xl") {
+        font-size: 14px;
+    }
 }
 
 .text-center {

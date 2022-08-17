@@ -32,6 +32,10 @@
         padding-bottom: 50px;
         max-width: 652px;
         margin: 0 auto;
+
+        @include up-to("xl") {
+            font-size: 14px;
+        }
     }
 
     &-h3-1 {
@@ -119,6 +123,7 @@
         @include up-to("xl") {
             text-align: left;
             padding: 10px 0px;
+            font-size: 14px;
         }
     }
 
