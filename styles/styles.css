@@ -97,7 +97,7 @@ a {
 }
 @media (max-width: 1200px) {
   .md-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -939,7 +939,7 @@ a {
 }
 @media (max-width: 1200px) {
   .principle-purpose-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .principle-purpose-h3-1 {
@@ -1021,7 +1021,7 @@ a {
   .perks p {
     text-align: left;
     padding: 10px 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 767px) {
