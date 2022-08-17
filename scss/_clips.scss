@@ -119,7 +119,7 @@
     height: 60px;
     width: auto;
     margin-left: -75px;
-    min-width: 300px;
+    min-width: 225px;
     max-width: 300px;
     padding: 20px 0px 20px 40px;
     align-items: center;
@@ -129,7 +129,7 @@
     color: white;
     // clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
 
-    clip-path: polygon(75% 0%, 80% 50%, 75% 100%, 0% 100%, 5% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 82% 50%, 75% 100%, 0% 100%, 6% 50%, 0% 0%);
 
     @include up-to("xl") {
         min-width: 250px;
@@ -147,6 +147,75 @@
     }
 }
 
+.clip3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    margin-left: -55px;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px 0px 20px 30px;
+    align-items: center;
+    // background-image: url("../Assets/clip22.png");
+    // background-re5peat: no-repeat;
+    background-color: $color-bg-green;
+    color: white;
+    // clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+
+    clip-path: polygon(75% 0%, 82% 50%, 75% 100%, 0% 100%, 6% 50%, 0% 0%);
+
+    @include up-to("xl") {
+        min-width: 250px;
+        margin-left: -65px;
+        padding: 17px 0px 17px 30px;
+
+    }
+
+    @include up-to("xl") {
+        padding: 17px 50px 17px 20px;
+        margin-left: 0px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        clip-path: polygon(0% 0%, 75% 0%, 80% 50%, 75% 100%, 0% 100%);
+    }
+}
+
+.clip4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    width: auto;
+    margin-left: -60px;
+    min-width: 280px;
+    max-width: 300px;
+    padding: 20px 0px 20px 40px;
+    align-items: center;
+    // background-image: url("../Assets/clip22.png");
+    // background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    color: white;
+    // clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+
+    clip-path: polygon(75% 0%, 82% 50%, 75% 100%, 0% 100%, 6% 50%, 0% 0%);
+
+    @include up-to("xl") {
+        min-width: 250px;
+        margin-left: -65px;
+        padding: 17px 0px 17px 30px;
+
+    }
+
+    @include up-to("xl") {
+        padding: 17px 50px 17px 20px;
+        margin-left: 0px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        clip-path: polygon(0% 0%, 75% 0%, 80% 50%, 75% 100%, 0% 100%);
+    }
+}
 
 .clip-grid {
     grid-template-columns: repeat(3, 1fr);
